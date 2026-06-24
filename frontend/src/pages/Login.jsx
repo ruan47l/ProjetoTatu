@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios'; // Se não instalou, use: npm install axios
+import "./Login.css"; 
 
 function Login() {
   const [loginInput, setLoginInput] = useState('');

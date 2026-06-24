@@ -1,0 +1,66 @@
+/* Estrutura da barra do topo */
+.navbar-topo {
+  display: flex;
+  justify-content: flex-start; /* Alinha o botão no começo (esquerda) */
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #121212;
+  color: white;
+  position: relative;
+  font-family: sans-serif;
+}
+
+/* O quadrado do botão hambúrguer */
+.menu-hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0; /* Remove paddings padrão do botão */
+}
+
+/* As 3 barrinhas brancas */
+.menu-hamburger .bar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+/* CAIXA DOS LINKS */
+.menu-links {
+  display: none; 
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0; /* Mudado de 'right: 0' para 'left: 0' para abrir embaixo do botão */
+  background-color: #121212;
+  width: 200px;
+  padding: 20px;
+  list-style: none;
+  gap: 15px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* QUANDO CLICADO */
+.menu-links.open {
+  display: flex;
+}
+
+/* Estilo dos links dentro do menu */
+.menu-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
+
+/* Área onde fica o Painel Principal */
+.conteudo-principal {
+  padding: 20px;
+  font-family: sans-serif;
+}
